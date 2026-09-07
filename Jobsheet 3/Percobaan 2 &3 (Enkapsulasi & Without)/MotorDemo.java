@@ -10,13 +10,13 @@ public class MotorDemo {
         Motor motor2 = new Motor();
         motor2.setPlatNomor("D 5678 EF");
         motor2.setStatusMesin(false);
-        motor2.setKecepatan(0);
+        motor2.setKecepatan(-11);
         motor2.displayInfo();
 
         Motor motor3 = new Motor();
         motor3.setPlatNomor("F 9012 GH");
         motor3.setStatusMesin(true);
-        motor3.setKecepatan(80);
+        motor3.setKecepatan(124);
         motor3.displayInfo();
 
 

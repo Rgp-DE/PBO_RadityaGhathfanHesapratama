@@ -23,24 +23,27 @@ public class Motor {
         return kecepatan;
     }
 
-   public void setKecepatan(int kecepatan) {
-        // Validasi 1: Cek apakah mesin mati
-        if (!this.statusMesin && kecepatan > 0) {
+    public void setKecepatan(int kecepatan) {
+        // Validasi 1: Cek apakah kecepatan bernilai negatif (Jawaban No. 5)
+        if (kecepatan < 0) {
+            System.out.println("Peringatan: Kecepatan tidak boleh bernilai negatif!");
+            this.kecepatan = 0; // Kembalikan ke 0 jika input salah
+        }
+        // Validasi 2: Cek apakah mesin mati
+        else if (!this.statusMesin && kecepatan > 0) {
             System.out.println("Kecepatan tidak boleh lebih dari 0 jika mesin OFF!");
         } 
-        // Validasi 2: Cek batas kecepatan maksimal (Jawaban No. 4)
+        // Validasi 3: Cek batas kecepatan maksimal (Jawaban No. 4)
         else if (kecepatan > 100) {
             System.out.println("Peringatan: Kecepatan maksimal adalah 100 km/h!");
             this.kecepatan = 100; // Nilai dipaksa mentok di 100
         } 
-        // Jika aman, masukkan nilai kecepatan
+        // Jika semua validasi aman, masukkan nilai kecepatan
         else {
             this.kecepatan = kecepatan;
         }
     }
-
     
-
     public void displayInfo() {
         System.out.println("Plat Nomor: " + platNomor);
         System.out.println("Status Mesin: " + (statusMesin ? "ON" : "OFF"));
