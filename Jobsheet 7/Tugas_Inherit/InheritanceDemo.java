@@ -1,4 +1,4 @@
-package Tugas;
+package Tugas_Inherit;
 public class InheritanceDemo {
 
     public static void main(String[] args) {

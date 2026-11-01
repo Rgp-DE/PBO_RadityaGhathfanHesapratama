@@ -1,16 +1,20 @@
-package Tugas;
-public class TV extends BarangElektronik {
+package Tugas_Abstract;
+
+public class Tv extends BarangElektronik {
 
     private String ukuranLayar;
     private String jenisPanel;
 
-    public TV() {
+    public Tv() {
         super();
         this.ukuranLayar = "-";
         this.jenisPanel = "-";
     }
 
-    public TV(String merk, double harga, String warna, int dayaListrik, String ukuranLayar, String jenisPanel) {
+    public Tv(String merk, double harga, String warna,
+              int dayaListrik, String ukuranLayar,
+              String jenisPanel) {
+
         super(merk, harga, warna, dayaListrik);
         this.ukuranLayar = ukuranLayar;
         this.jenisPanel = jenisPanel;
@@ -18,6 +22,11 @@ public class TV extends BarangElektronik {
 
     public void setVolume(int volume) {
         System.out.println("Volume TV diatur menjadi " + volume);
+    }
+
+    @Override
+    public void operasikan() {
+        System.out.println("TV dinyalakan dan menampilkan gambar.");
     }
 
     @Override

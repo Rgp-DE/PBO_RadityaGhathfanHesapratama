@@ -1,4 +1,4 @@
-package Tugas;
+package Tugas_Inherit;
 
 public class Kulkas extends BarangElektronik {
 
