@@ -2,4 +2,8 @@ public abstract class AlatElektronik {
     public double harga;
     public String merk;
     public String warna;
+
+    public String getInfo() {
+        return "Merk  : " + merk + "\nHarga : Rp" + harga + "\nWarna : " + warna;
+    }
 }
