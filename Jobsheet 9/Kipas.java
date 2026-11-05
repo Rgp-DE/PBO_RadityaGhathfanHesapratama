@@ -1,7 +1,7 @@
 public class Kipas extends AlatElektronik {
     public String jenis;
 
-     @Override
+    @Override
     public String getInfo() {
         return super.getInfo() + "\nJenis : " + jenis;
     }
