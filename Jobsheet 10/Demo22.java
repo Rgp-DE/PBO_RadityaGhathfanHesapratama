@@ -7,23 +7,17 @@ public class Demo22 {
         TenagaKependidikan22 tendik = new TenagaKependidikan22("11111", "Andi", "Administrasi");
         TenagaKependidikan22 tedik2 = new TenagaKependidikan22("22222", "Rina", "Laboran");
 
-        Pegawai22 pegawai1 = dosen1;
+        train(dosen1);
+        train(dosen2);
+    }
 
-        System.out.println(pegawai1.nip);
-        System.out.println(pegawai1.nama);
-        pegawai1.displayInfo();
+    public static void train(Pegawai22 pegawai) {
+        pegawai.displayInfo();
+        System.out.println("Mengenalkan Lingkungan Kampus");
+        System.out.println("Menginfokan SOP/Juknis");
 
-        TenagaKependidikan22 test = (TenagaKependidikan22) pegawai1;
-
-
-        ArrayList<Pegawai22> daftarPegawai = new ArrayList<>();
-        daftarPegawai.add(dosen1);
-        daftarPegawai.add(dosen2);
-        daftarPegawai.add(tendik);
-        daftarPegawai.add(tedik2);
-
-        System.out.println("Jumlah Pegawai: " + daftarPegawai.size());
-
-        dosen1.mengajar();
+        if (pegawai instanceof Dosen22){
+            System.out.println("Memberikan Pelatihan Pendagogik");
+        }
     }
 }
