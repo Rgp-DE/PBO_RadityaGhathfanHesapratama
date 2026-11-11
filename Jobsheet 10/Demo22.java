@@ -12,8 +12,9 @@ public class Demo22 {
         System.out.println("pegawai1.nip");
         System.out.println("pegawai1.nama");
         System.out.println("pegawai1.nidn");
-        pegawai1.mengajar();
+        pegawai1.displayInfo();
 
+        
         ArrayList<Pegawai22> daftarPegawai = new ArrayList<>();
         daftarPegawai.add(dosen1);
         daftarPegawai.add(dosen2);
