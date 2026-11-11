@@ -9,12 +9,13 @@ public class Demo22 {
 
         Pegawai22 pegawai1 = dosen1;
 
-        System.out.println("pegawai1.nip");
-        System.out.println("pegawai1.nama");
-        System.out.println("pegawai1.nidn");
+        System.out.println(pegawai1.nip);
+        System.out.println(pegawai1.nama);
         pegawai1.displayInfo();
 
-        
+        TenagaKependidikan22 test = (TenagaKependidikan22) pegawai1;
+
+
         ArrayList<Pegawai22> daftarPegawai = new ArrayList<>();
         daftarPegawai.add(dosen1);
         daftarPegawai.add(dosen2);
