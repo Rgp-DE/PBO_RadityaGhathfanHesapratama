@@ -7,6 +7,13 @@ public class Demo22 {
         TenagaKependidikan22 tendik = new TenagaKependidikan22("11111", "Andi", "Administrasi");
         TenagaKependidikan22 tedik2 = new TenagaKependidikan22("22222", "Rina", "Laboran");
 
+        Pegawai22 pegawai1 = dosen1;
+
+        System.out.println("pegawai1.nip");
+        System.out.println("pegawai1.nama");
+        System.out.println("pegawai1.nidn");
+        pegawai1.mengajar();
+
         ArrayList<Pegawai22> daftarPegawai = new ArrayList<>();
         daftarPegawai.add(dosen1);
         daftarPegawai.add(dosen2);
@@ -14,6 +21,7 @@ public class Demo22 {
         daftarPegawai.add(tedik2);
 
         System.out.println("Jumlah Pegawai: " + daftarPegawai.size());
-        
+
+        dosen1.mengajar();
     }
 }
